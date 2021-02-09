@@ -1,0 +1,34 @@
+.mat-stepper-horizontal {
+    margin-top: 8px;
+  }
+  
+  .mat-form-field {
+    margin-top: 16px;
+  }
+
+.CompanyRegistration {
+    width: 100%;
+    border: 15px solid rgb(214, 214, 214);
+    padding: 50px;
+    margin: 20px;
+  }
+
+  .textBoxes{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+   
+  .saveBtn{
+    background-color: white;
+    color: black;
+    border-color: black;
+  }
+  
+  .nextStepBtn , .saveBtn {
+    display:inline-block;
+    }

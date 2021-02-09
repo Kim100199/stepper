@@ -1,0 +1,63 @@
+<div>
+  <div class="CompanyRegistration">
+    <form action="/action_page.php">
+
+      <div class="companyH2">
+        <h2>Create the company's profile</h2>
+      </div>
+
+      <div class="companyHeader">
+        <header>Please enter the company's details below</header>
+      </div>
+
+      <div class="textBoxes">
+        <div class="companyName">
+          <label for="fname">Full Company Name</label>
+          <input type="text" id="cName" name="firstname">
+        </div>
+
+        <div class="companyRegistration">
+          <label for="cRegistration">Company registration name</label>
+          <input type="text" id="cRegistration" name="CompanyRegistraion">
+        </div>
+
+        <div class="vatNum">
+          <label for="cVatNum">Company vat number</label>
+          <input type="text" id="cVatNum" name="CompanyVatNum">
+        </div>
+
+        <div class="companyEmail">
+          <label for="cEmail">Company email address</label>
+          <input type="text" id="cEmail" name="CompanyEmail">
+        </div>
+
+        <div class="officeNum">
+          <label for="cOfficeNum">Company office number</label>
+          <input type="text" id="cOfficeNum" name="CompanyOfficeNum">
+        </div>
+
+        <div class="companyAddress">
+          <label for="cAddress">Company address</label>
+          <input type="text" id="cAddress" name="CompanyAddress">
+        </div>
+
+        <div class="postalAddress">
+          <label for="postalAddress">Postal address</label>
+          <input type="text" id="postalAddress" name="postalAddress">
+        </div>
+      </div>
+
+      <div class="saveBtn">
+        <input type="submit" value="Save" id="save">
+      </div>
+
+      <div class="nextStepBtn">
+        <input type="submit" value="Next Step" id="nextStep">
+      </div>
+
+    </form>
+  </div>
+</div>
+
+
+<button type="button" matStepperNext (click)="step1Submitted()">Next</button>
