@@ -34,7 +34,8 @@
     </form>
   </div>
   <div class="button-section">
-    <button style="float: right;" class="button blue-button" value="NextStep" id="nextStep">Next Step</button>
+
+    <button type="button" style="float: right;" class="button blue-button" matStepperNext (click)="step1Submitted()" alue="NextStep" id="nextStep">Next Step</button>
     <button style="float: right;" class="button white-button" value="Save" id="save">Save</button>
   </div>
 </div>
