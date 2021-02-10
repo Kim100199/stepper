@@ -1,14 +1,25 @@
-<div *ngIf="formSubmitted">
-  <h4>Details submitted successfully</h4>
-</div>
-<div *ngIf="!formSubmitted">
-  <h4>Following details submitted, please confirm and hit submit</h4>
-  <br/>Name: {{regForm.get('personalDetails').get('firstname').value}} 
-    {{regForm.get('personalDetails').get('lastname').value}}
-  <br/>Email : {{regForm.get('contactDetails').get('email').value}}
-  <br/>Phone :{{regForm.get('contactDetails').get('phone').value}}
-  <br/>
-  <button type="button" matStepperPrevious>Back</button>
-  &nbsp;
-  <button type="button" (click)="submit()">Submit</button>
+<div class="main-box">
+  <div class="greybox">
+    <form action="/action_page.php">
+      <div class="title1">Create a project</div>
+      <p>Please enter the project details below</p>
+      <div class="title3">Project Name</div>
+      <div class="md-form form-group">
+          <input mdbInput type="text" class="form-control" id="pName">
+      </div>
+      <div class="title3">Project Code</div>
+      <div class="md-form form-group">
+          <input mdbInput type="text" class="form-control" id="pCode">
+      </div>
+      <div class="title2">Assign Users</div>
+      <p>Please enter the email addresses of the people you would like to have access to the system</p>
+      <div class="button-input-set">
+        <input mdbInput type="text" class="form-control" id="assignUser">
+          <button style="float: right;" class="button white-button" value="Add" id="addUser">Add</button>
+      </div>
+    </form>
+  </div>
+  <div class="button-section">
+    <button style="float: right;" class="button blue-button" value="done" id="done">Done</button>
+  </div>
 </div>

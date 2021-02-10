@@ -1,63 +1,41 @@
-<div>
-  <div class="CompanyRegistration">
+<div class="main-box">
+  <div class="greybox">
     <form action="/action_page.php">
-
-      <div class="companyH2">
-        <h2>Create the company's profile</h2>
-      </div>
-
-      <div class="companyHeader">
-        <header>Please enter the company's details below</header>
-      </div>
-
-      <div class="textBoxes">
-        <div class="companyName">
-          <label for="fname">Full Company Name</label>
-          <input type="text" id="cName" name="firstname">
+      <div class="title1">Create the company's profile</div>
+      <p>Please enter the company's details below</p>
+      <div class="title3">Full Company Name</div>
+        <div class="md-form form-group">
+            <input mdbInput type="text" class="form-control" id="cName" name="firstname">
         </div>
-
-        <div class="companyRegistration">
-          <label for="cRegistration">Company registration name</label>
-          <input type="text" id="cRegistration" name="CompanyRegistraion">
+      <div class="title3">Company Registration Name</div>
+        <div class="md-form form-group">
+            <input mdbInput type="text" class="form-control" id="cRegistration" name="CompanyRegistraion">
         </div>
-
-        <div class="vatNum">
-          <label for="cVatNum">Company vat number</label>
-          <input type="text" id="cVatNum" name="CompanyVatNum">
+      <div class="title3">Company VAT No</div>
+        <div class="md-form form-group">
+            <input mdbInput type="text" class="form-control" id="cVatNum" name="CompanyVatNum">
         </div>
-
-        <div class="companyEmail">
-          <label for="cEmail">Company email address</label>
-          <input type="text" id="cEmail" name="CompanyEmail">
+      <div class="title3">Company Email Address</div>
+        <div class="md-form form-group">
+            <input mdbInput type="text" class="form-control"  id="cEmail" name="CompanyEmail">
         </div>
-
-        <div class="officeNum">
-          <label for="cOfficeNum">Company office number</label>
-          <input type="text" id="cOfficeNum" name="CompanyOfficeNum">
+      <div class="title3">Company Office No</div>
+        <div class="md-form form-group">
+            <input mdbInput type="text" class="form-control" id="cOfficeNum" name="CompanyOfficeNum">
         </div>
-
-        <div class="companyAddress">
-          <label for="cAddress">Company address</label>
-          <input type="text" id="cAddress" name="CompanyAddress">
+      <div class="title3">Company Address</div>
+        <div class="md-form form-group">
+            <input mdbInput type="text" class="form-control" id="cAddress" name="CompanyAddress">
         </div>
-
-        <div class="postalAddress">
-          <label for="postalAddress">Postal address</label>
-          <input type="text" id="postalAddress" name="postalAddress">
+      <div class="title3">Postal Address</div>
+        <div class="md-form form-group">
+            <input mdbInput type="text" class="form-control"  id="postalAddress" name="PostalAddress">
         </div>
-      </div>
-
-      <div class="saveBtn">
-        <input type="submit" value="Save" id="save">
-      </div>
-
-      <div class="nextStepBtn">
-        <input type="submit" value="Next Step" id="nextStep">
-      </div>
-
     </form>
+  </div>
+  <div class="button-section">
+    <button style="float: right;" class="button blue-button" value="NextStep" id="nextStep">Next Step</button>
+    <button style="float: right;" class="button white-button" value="Save" id="save">Save</button>
   </div>
 </div>
 
-
-<button type="button" matStepperNext (click)="step1Submitted()">Next</button>
